@@ -11,6 +11,8 @@ db-migrate:
 
 db-psql:
 	docker exec -it jobtrackr_postgres psql -U jobtrackr -d jobtrackr
+db-tables:
+	docker exec -it jobtrackr_postgres psql -U jobtrackr -d jobtrackr -c "\dt"
 
 run:
 	go run ./cmd/api
