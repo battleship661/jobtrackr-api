@@ -32,3 +32,13 @@ docker compose up -d
 ```bash
 curl http://localhost:8080/health
 curl http://localhost:8080/health/db
+## Database Schema
+Tables:
+- users
+- applications
+- application_events
+
+### Run migrations
+```bash
+make db-up
+make db-migrate
