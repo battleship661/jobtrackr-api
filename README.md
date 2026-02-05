@@ -42,3 +42,23 @@ Tables:
 ```bash
 make db-up
 make db-migrate
+## Endpoints
+
+### Health
+- `GET /health`
+- `GET /health/db`
+
+### Applications (requires `X-User-Id` header for now)
+- `POST /applications`
+- `GET /applications?status=&company=`
+- `GET /applications/{id}`
+- `PATCH /applications/{id}`
+- `DELETE /applications/{id}`
+
+## Run locally
+
+### 1) Start database
+```bash
+make db-up
+make db-migrate
+make db-tables
