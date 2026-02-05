@@ -23,39 +23,37 @@ Includes database migrations, health checks, and full CRUD endpoints.
 
 ## Getting Started
 
-### 1) Clone the repo
+###  Clone the repo
 ```bash
 git clone https://github.com/battleship661/jobtrackr-api.git
 cd jobtrackr-api
 
----
 
+``` 
 ## Run Locally
-
-### Start the database and run migrations
+###  Start the database and run migrations
 ```bash
 make db-up
 make db-migrate
 make db-tables
+```
 
----
+## Health Checks
+- `/health`
+- `/health/db`
 
-## API Endpoints
-
+ ## API End points
 ### Health
 - `GET /health`
 - `GET /health/db`
-
----
 
 ### Applications
 - `POST /applications`
 - `GET /applications`
 - `GET /applications/{id}`
 - `PATCH /applications/{id}`
-- `DELETE /applications/{id}`
+- `DELETE /applications/{id}` 
 
----
 
 ## Example Requests
 
@@ -64,4 +62,4 @@ curl http://localhost:8080/applications \
   -H "X-User-Id: <USER_UUID>"
 
 
----
+
