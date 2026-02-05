@@ -27,3 +27,8 @@ filtering, caching, and background jobs.
 git clone https://github.com/battleship661/jobtrackr-api.git
 cd jobtrackr-api
 docker compose up -d
+- Database health check endpoint (`GET /health/db`)
+### Health Checks
+```bash
+curl http://localhost:8080/health
+curl http://localhost:8080/health/db
